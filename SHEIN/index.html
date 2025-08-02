@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHEIN Homepage Replica with Auto Scrolling Slider</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="" href="style.css">
+  <link rel="stylesheet" href="pos.js">
+ 
+</head>
+<body class="bg-white font-sans text-[13px] leading-tight text-[#333] select-none">
+  <!-- Top banner -->
+  <div class="w-full bg-[#f7e9a7] text-[13px] text-[#d46a4c] font-semibold flex justify-center items-center gap-1 border-b border-[#d6c47a] py-[6px] px-2">
+    <div class="flex items-center gap-1 border-r border-[#d6c47a] pr-3">
+      <i class="fas fa-truck"></i>
+      <span>FREE STANDARD SHIPPING</span>
+      <span class="text-[9px] font-normal ml-1">*CONDITIONS APPLY</span>
+    </div>
+    <div class="flex items-center gap-1 border-r border-[#d6c47a] px-3">
+      <i class="fas fa-box-open"></i>
+      <span>FREE RETURNS</span>
+      <span class="text-[9px] font-normal ml-1">*CONDITIONS APPLY</span>
+    </div>
+    <div class="flex items-center gap-1 pl-3">
+      <i class="fas fa-tag"></i>
+      <span>PRICE DROP</span>
+      <span class="text-[9px] font-normal ml-1">PRICING & TARIFF FAQ</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 py-2 border-b border-[#e5e5e5]">
+    <div class="flex items-center gap-4">
+      <div class="text-[24px] font-extrabold tracking-widest select-text cursor-default">SHEIN</div>
+      <nav class="hidden md:flex items-center gap-4 text-[11px] text-[#666] font-normal select-text cursor-default">
+        <div class="relative group cursor-pointer">Categories <i class="fas fa-chevron-down text-[9px] ml-1"></i></div>
+        <div>New In</div>
+        <div>Sale</div>
+        <div>Women Clothing</div>
+        <div>Beachwear</div>
+        <div>Kids</div>
+        <div>Curve</div>
+        <div>Men Clothing</div>
+        <div>Shoes</div>
+        <div>Underwear & Sleepwear</div>
+        <div>Home & Kitchen</div>
+        <div>Jewelry & Accessories</div>
+        <div>Beauty & Health</div>
+        <div>Baby & Maternity</div>
+        <div>Bags & Luggage</div>
+        <div>Sports & Outdoors</div>
+        <div>Home Textiles</div>
+        <div>Electronics</div>
+        <div><i class="fas fa-chevron-right text-[9px]"></i></div>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4">
+      <input class="border border-[#ccc] rounded-sm text-[12px] px-2 py-[3px] w-[180px] md:w-[250px] focus:outline-none" placeholder="shorts" type="text" />
+      <button class="bg-black text-white px-3 py-[6px] text-[12px] rounded-sm"><i class="fas fa-search"></i></button>
+      <div class="flex items-center gap-4 text-[#666] text-[14px] cursor-pointer select-none">
+        <i class="fas fa-user"></i>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-globe"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-4 py-4 max-w-[900px] mx-auto select-none">
+    <div class="flex flex-wrap gap-4">
+      <!-- Left Promo -->
+      <div class="w-[140px] flex flex-col gap-1 text-[11px] text-[#333]">
+        <div class="flex justify-between font-bold">
+          <div>10%</div><div>15%</div><div>20%</div>
+        </div>
+        <div class="flex justify-between text-[#666] font-normal">
+          <div>OFF OVER $69</div><div>OVER $109</div><div>OVER $189</div>
+        </div>
+        <div class="flex items-center gap-1 mt-1">
+          <div class="font-bold">Code:</div>
+          <div class="bg-[#d94a4a] text-white text-[11px] font-semibold rounded px-2 py-[1px] select-text">US24J2</div>
+          <div class="text-[9px] text-[#999]">*Capped at $40</div>
+        </div>
+        <button class="bg-gradient-to-r from-[#d97f6f] to-[#d46a4c] text-white text-[11px] rounded-md py-1 mt-1">Collect</button>
+        <div class="bg-[#f7e9a7] border border-[#d6c47a] rounded-md p-2 mt-2 text-[11px] text-[#a46a4c] flex items-center gap-1">
+          <i class="fas fa-info-circle"></i>
+          <div>
+            <span class="font-semibold">SHEIN CLUB</span><br />
+            Extra discount on <span class="font-semibold text-[#d46a4c]">100k+</span> items! Unlock savings!
+          </div>
+          <div class="ml-auto text-[11px] font-semibold cursor-pointer select-text">Join Now &gt;</div>
+        </div>
+      </div>
+
+      <!-- Center Slider -->
+      <div class="flex-1 max-w-[400px] relative border border-[#3a9ae0] rounded-md overflow-hidden">
+        <div id="slider" class="relative w-full h-[300px] md:h-[400px] overflow-hidden rounded-md">
+          <img src="https://storage.googleapis.com/a1aa/image/2f8ee65c-b1ca-46c3-1f75-c6349671f3a8.jpg" class="absolute top-0 left-0 w-full h-full object-cover opacity-100 transition-opacity duration-700" alt="Slide 1" />
+          <img src="https://storage.googleapis.com/a1aa/image/0a00c67f-0828-4755-e62f-4aed6cf503c8.jpg" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Slide 2" />
+          <img src="https://storage.googleapis.com/a1aa/image/31829351-f534-4abd-ca89-06d355d03255.jpg" class="absolute top-0 left-0 w-full h-full object-cover opacity-0 transition-opacity duration-700" alt="Slide 3" />
+        </div>
+        <button onclick="prevSlide()" class="absolute top-1/2 left-2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1 text-[#3a9ae0] hover:bg-opacity-100 z-10"><i class="fas fa-chevron-left"></i></button>
+        <button onclick="nextSlide()" class="absolute top-1/2 right-2 -translate-y-1/2 bg-white bg-opacity-70 rounded-full p-1 text-[#3a9ae0] hover:bg-opacity-100 z-10"><i class="fas fa-chevron-right"></i></button>
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 z-10">
+          <div id="dot-0" onclick="goToSlide(0)" class="w-2 h-2 rounded-full bg-white opacity-50 cursor-pointer"></div>
+          <div id="dot-1" onclick="goToSlide(1)" class="w-2 h-2 rounded-full bg-white opacity-50 cursor-pointer"></div>
+          <div id="dot-2" onclick="goToSlide(2)" class="w-2 h-2 rounded-full bg-white opacity-50 cursor-pointer"></div>
+        </div>
+      </div>
+
+      <div classname="flex bg-black-900">product</div>
+    </div>
+  </main>
+
+  <!-- Right Bar -->
+  <div class="fixed top-1/2 right-0 -translate-y-1/2 bg-black text-white text-[12px] font-semibold tracking-widest py-2 px-3 rotate-90 origin-bottom-right cursor-default select-none" style="writing-mode: horizontal-tb;">
+    GET EXTRA 30%
+  </div>
+
+</body>
+</html>
